@@ -180,8 +180,10 @@ if(s.batch)h+='<span class="b '+batchCls(s.batch)+'">'+esc(s.batch)+'</span>';
 h+='</div></div><div class="crdi">';
 h+=ii('&#x1F4CD; 地址',s.address)+ii('&#x1F4DE; 电话',s.phone);
 h+=ii('&#x1F3DB; 区域',s.district)+ii('&#x1F4CB; 批次',s.batch);
-if(s.total_plan)h+=ii('&#x1F4CA; 总计划',s.total_plan+'人');
-if(s.dorm_total)h+=ii('&#x1F3E0; 宿位',s.dorm_total+'人');
+if(s.total_plan)h+=ii('📊 总计划',s.total_plan+'人');
+if(s.dorm_total)h+=ii('🏠 宿位',s.dorm_total+'人');
+if(s.tuition)h+=ii('💰 学费',s.tuition);
+if(s.dorm_fee)h+=ii('🛏️ 住宿费',s.dorm_fee);
 h+='</div></div>';
 if(s.majors&&s.majors.length>0){
 h+='<div class="crd"><div class="msec" style="border-top:none">';
